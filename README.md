@@ -2,7 +2,8 @@
 
 This repository contains two approaches to automatically **start/stop Amazon RDS instances** using **Amazon EventBridge** and **AWS Lambda**.
 
-👉 Full step-by-step guide available in my Medium blog: https://medium.com/@pratipghosh.tech/how-i-automated-aws-rds-instance-scheduling-with-eventbridge-and-lambda-976bc89698a7
+👉 Full step-by-step guide available in my Medium blog: 
+   https://medium.com/@pratipghosh.tech/how-i-automated-aws-rds-instance-scheduling-with-eventbridge-and-lambda-976bc89698a7
 
 ---
 
@@ -30,9 +31,8 @@ Both are negligible compared to the cost savings from stopping RDS.
 ---
 
 ## 📂 Repo Organization
-- `solution1-eventbridge-scheduler/` → JSON configs for IAM role and EventBridge schedules.
-- `solution2-eventbridge-lambda/` → IAM role, Lambda code, EventBridge rules.
-- `diagrams/` → Architecture diagrams (PNG + ASCII).
+- `solution1-eventbridge-scheduler/` → JSON configs for IAM role.
+- `solution2-eventbridge-lambda/` → JSON configs for IAM role and Lambda code.
 
 ---
 
@@ -40,8 +40,3 @@ Both are negligible compared to the cost savings from stopping RDS.
 All IAM policies in this repo are written with **least privilege**:
 - Permissions are restricted to a **single RDS instance ARN**.
 - Lambda role can only manage the **specific EventBridge rules** it needs.
-
----
-
-## 🖼️ Diagrams
-Architecture diagrams for both solutions are in the [diagrams/](./diagrams) folder.
