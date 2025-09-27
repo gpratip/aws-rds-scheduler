@@ -1,0 +1,32 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:GetMetricData"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "rds:StopDBInstance"
+      ],
+      "Resource": "arn:aws:rds:<region>:<account-id>:db:<your-db-instance-identifier>"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "events:PutRule",
+        "events:PutTargets",
+        "events:EnableRule",
+        "events:DisableRule"
+      ],
+      "Resource": [
+        "arn:aws:events:<region>:<account-id>:rule/<PRIMARY_RULE_NAME>",
+        "arn:aws:events:<region>:<account-id>:rule/<RETRY_RULE_NAME>"
+      ]
+    }
+  ]
+}
