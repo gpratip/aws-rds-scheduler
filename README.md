@@ -2,7 +2,7 @@
 
 This repository contains two approaches to automatically **start/stop Amazon RDS instances** using **Amazon EventBridge** and **AWS Lambda**.
 
-👉 Full step-by-step guide available in my Medium blog: [link-to-medium]
+👉 Full step-by-step guide available in my Medium blog: https://medium.com/@pratipghosh.tech/how-i-automated-aws-rds-instance-scheduling-with-eventbridge-and-lambda-976bc89698a7
 
 ---
 
